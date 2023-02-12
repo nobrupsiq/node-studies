@@ -10,12 +10,19 @@
   {{/showOld}}
 
   <hr/>
-
   <h2>Produtos</h2>
   <ul>
     {{#products}}
       {{>partials/productItem}}
     {{/products}}
+  </ul>
+
+  <hr/>
+  <h2>Produtos a partir de R$ 12</h2>
+  <ul>
+    {{#expensives}}
+      {{>partials/productItem}}
+    {{/expensives}}
   </ul>
 
   <hr/>
